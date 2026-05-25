@@ -1,39 +1,61 @@
-- Level editing for RootTux -
+- Level design for RootTux -
 
-Last update: April 29, 2026
+Created on: May 2, 2026
+Last update: May 2, 2026
 
-This document describes how to use Tiled to edit levels
+This document describes how to make good levels for RootTux
+To be clear, not all levels need to be the best thing ever
+made. You just need to make them good. The lowest quality
+levels that would be accepted would be something like
+Pre-0.7.1? Countercurrent.
 
-= LEVEL EDITOR =
+This is based on the SuperTux Milestone 2 Level Design
+Guidelines document, which is why there's very similar 
+wording.
 
-USING TILED:
---------------
-Tiled is an external project that is used to make levels for
-many games including RootTux (or else it wouldn't be mentioned :) ).
+The person who created the original levelguidelines.txt
+from SuperTux is Wansti.
 
-Anyway, it is pretty easy to use. So, if you are considering doing 
-a few levels for this, it would be a good idea to check this out.
+Introduction
+------------
+These guidelines should be followed for any level that
+appears in the official worlds. Level Designers contributing
+levels to the planned 6th world or to their own mod can
+choose whether they follow these level guidelines or not.
+However, to maintain a certain level of playability, 
+official levels should be designed with these rules in mind.
 
-Its webpage is located at:
-https://www.mapeditor.org/
-
-You need to make a copy of the base level, then edit it, making sure
-all the objects are in the correct object layer and have the correct
-class names (you should use the objects in the top part of the level,
-however, when you're finished creating your level, you need to delete
-the objects there (not the objects inside the level) otherwise when
-you begin the level, the objects fall from the sky!)
-
-
-= CONCLUSION =
-
-To sum up, go build lots of levels and HAVE FUN!!
-
-Please, send your levels or any art, including sketches, you
-have created to the RootTux discussions.
-
-Actually, you don't need to, but it'd be nice to do so. Gives
-more ideas on what to do for RootTux's next milestone, "RootTux
-Cycle"
-
-    - RootTux project
+Rules
+-----
+1. Don't mix tilesets! There shouldn't be any ice tiles in a
+   forest level, unless there is an obvious reason (like
+   a transition into another area)
+2. Clearly distinguish between the layers. Players should be
+   able to see immediately where they can safely walk and
+   what is foreground and background. Avoid placing bonus
+   blocks and items in the background.
+3. Be careful not to create dead ends. The player should not
+   be able to be softlocked in any level, even in the 6th
+   world!
+4. Test your level thoroughly to find possible paths you
+   might have missed before that can be used to cheat.
+5. Use everything the engine offers, but don't place it all
+   in a single level!
+6. Avoid large amounts of objects and enemies on the screen
+   at once as it greatly decreases playability. Also, your
+   level may not be playable on slower machines anymore.
+7. Find the right difficulty! Too easy levels get boring
+   very quickly while too hard ones can be frustrating.
+   Levels you made can often appear a lot easier for yourself,
+   so be sure to let other people test them.
+8. Don't make your level too short or too long. Good size
+   depends on the level's overall design, so there's no general
+   "good" value. In longer levels, make sure there are enough
+   checkpoints, so players won't have to repeat large portions
+   of the level.
+9. Secret areas sghould be well-hidden and not visible on
+   first sight. Use your imagination to think of new ways to
+   create secrets, like making a more difficult path that leads
+   to a Tux Doll, for example. You should avoid using invisible
+   blocks and hidden walls unless absolutely necessary as those
+   can be very annoying.
