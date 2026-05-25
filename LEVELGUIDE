@@ -1,0 +1,41 @@
+- Level editing for RootTux -
+
+Created on: April 29, 2026
+Last update: May 4, 2026
+
+This document describes how to use Tiled to edit levels
+
+= LEVEL EDITOR =
+
+USING TILED
+-----------
+Tiled is an external project that is used to make levels for
+many games including RootTux (or else it wouldn't be mentioned :) ).
+
+Anyway, it is pretty easy to use. So, if you are considering doing 
+a few levels for this fangame, it would be a good idea to check this 
+out.
+
+Its webpage is located at:
+https://www.mapeditor.org/
+
+You need to make a copy of the base level, then edit it, making sure
+all the objects are in the correct object layer and have the correct
+class names (you should use the objects in the top part of the level,
+however, when you're finished creating your level, you need to delete
+the objects there (not the objects inside the level) otherwise when
+you begin the level, the objects fall from the sky!)
+
+
+= CONCLUSION =
+To sum up, go build lots of levels and HAVE FUN!!
+
+It would be appreciated if you could make a pull request that adds
+things to the contrib folder if you make art, levels, sketches, ideas, 
+anything.
+
+Actually, you don't need to, but it'd be nice to do so. Gives
+more ideas on what to do for RootTux's next milestone, "RootTux
+Cycle"
+
+    - RootTux Team

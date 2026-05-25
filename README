@@ -1,2 +1,147 @@
-The new repository is in the link below:
-https://tangled.org/vaesea.bsky.social/roottux
+- An introduction for RootTux -
+
+Created on: April 28, 2026
+Last update: May 25, 2026
+
+DESCRIPTION
+-----------
+  SuperTux is a jump'n run like game, with strong inspiration from the
+  Super Mario Bros games for Nintendo.
+
+  Run and jump through multiple worlds, fighting off enemies by jumping
+  on them or bumping them from below.  Grabbing power-ups and other stuff
+  on the way.
+
+  RootTux is a recreation of SuperTux Milestone 1. It's meant to be the
+  beginning of a larger project we plan to make that would be what SuperTux
+  would look like if we continued Milestone 1. Don't expect it to be the
+  best thing you've ever played.
+
+  The main differences are that Tux automatically runs now, he has
+  unlimited lives, there's no score, and there's just 15 levels now (since
+  this is planned to be a larger project, each world will have at least 15
+  levels)
+
+  While this fangame is planned to be polished before it gets larger, It's
+  not meant to be like SuperTux Classic but in HaxeFlixel, but the concept
+  for the version after the first version will likely be a similar concept,
+  a "polished Milestone 1" sort of thing. Nolok will not be the boss of Icy
+  Island, instead, he will be the boss of the 5th world, although the theme
+  of the 5th world hasn't been decided yet.
+
+  There are planned to be 6 worlds, however, the 6th world is just a bonus
+  world that's more difficult than the other worlds, with it's only theme
+  being mixing other world's themes.
+
+
+ROOTTUX BEGINNING
+-----------------
+  RootTux Beginning is the first milestone of RootTux development. It aims
+  to add the entire Icy Island, polish it, along with adding things like
+  mod support and more. This is not to be confused with RootTux Cycle, which
+  adds the other worlds.
+
+
+ROOTTUX CYCLE
+-------------
+  RootTux Cycle is the second milestone of RootTux development. It aims to
+  add the rest of the game, as RootTux Beginning is more like a "proof of
+  concept". It's possible that this could be split into multiple milestones,
+  all of them adding their own separate world, or it's possible this could
+  be turned into the "polishing" step of RootTux Beginning, depending on how
+  large that step becomes.
+
+
+STORY
+-----
+- Penny gets captured! -
+
+  Tux and Penny were out having a nice
+  picnic on the ice fields of Icy Island.
+  Suddenly, a creature jumped from
+  behind an ice bush, there was a flash,
+  and Tux fell unconscious!
+
+  When Tux wakes up, he finds that Penny
+  is missing. Where she lay before now
+  lies a letter. "Tux, my arch enemy!"
+  says the letter. "I have captured your 
+  beautiful Penny and have taken her to 
+  my fortress. The path to my fortress is 
+  littered with my minions. Give up on the 
+  thought of trying to reclaim her, you 
+  haven't got a chance! -Nolok"
+
+  Tux looks and see Nolok's fortress in
+  the distance. Determined to save his
+  beloved Penny, he begins his journey.
+
+
+DOCUMENTATION
+-------------
+  Important documentation for RootTux is contained in multiple files.
+  Please see them:
+
+    AUTHORS     - Credits for people that contributed to the creation
+                  of RootTux.
+    NEWS        - Changes since the previous versions of "RootTux"
+    COPYING     - The GNU General Public License, which "RootTux" is licensed
+                  under.
+    README      - (This file.)  Game story, usage, rules and controls.
+    TODO        - A wish-list for this version of "RootTux"
+    LEVELDESIGN and LEVELGUIDELINES - Very useful information for those 
+                                      that want to design levels for 
+                                      RootTux.
+    ChangeLog - Changes since RootTux's first version
+
+
+RUNNING THE GAME
+----------------
+  RootTux is made using Haxe, HaxeFlixel and Polymod.
+  
+  Actually, if you compile before release, Polymod and thx.core git ver
+  isn't needed, as mod support won't be added until release.
+
+  1. Install Haxe 4.3.7. Later versions that may release later will likely not work.
+  2. Install HaxeFlixel 6.1.2. From the looks of it, 6.2.0, when it releases, could 
+     work, but it's best to use 6.1.2 for now.
+  3. Make sure Lime and OpenFL are installed, also make sure Lime and Flixel Tools 
+     have been set up.
+  4. If you're on Windows, install hxcpp.
+  5. If you're on Windows, install Visual Studio Community. (THIS STEP IS W.I.P, 
+     THERE ARE SPECIFIC THINGS THAT NEED TO BE INSTALLED THROUGH VISUAL STUDIO 
+     THAT AREN'T LISTED HERE)
+  6. Install Polymod 1.8.0.
+  7. Install thx.core from Git (You need GIt installed!) (haxelib git thx.core 
+     https://github.com/fponticelli/thx.core) (Polymod won't work without the git 
+     version of thx.core)
+  8. Open the terminal in the folder the Project.xml of the game is in. You may need 
+     to use the cd command if you're on Windows.
+  9. Use the command "lime test [OS] -debug", replacing [OS] with the Operating System 
+     you're using, such as windows, mac or linux. On any OS, you can compile the game 
+     to HTML5 by replacing [OS] with html5
+  10. It will take more than 5 minutes to compile, so get yourself a drink and some food, 
+      watch a video or play a game.
+  11. Once it's compiled, your build will be in the export folder.
+  12. Windows and Mac are not officially supported yet, but it should still work?
+
+
+PLAYING THE GAME
+----------------
+  Controls
+    Only keyboards are supported right now. The left / A key moves Tux to
+    the left, the right / D key moves Tux to the right, the space key makes
+    Tux jump, the down / S key makes Tux duck, the left CTRL (Control) /
+    left shift key makes Tux shoot fire if he's got the fire power-up.
+
+
+SCREEN LAYOUT
+-------------
+  Work In Progress
+
+
+THE END
+-------
+  Thanks for trying out RootTux!
+
+  From the RootTux Team.
