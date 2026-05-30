@@ -2,6 +2,8 @@ package states;
 
 // anatolystev - adds the coin
 
+import creatures.badguy.BadguyNoEcho;
+import creatures.badguy.Badguy;
 import objects.Coin;
 import flixel.FlxSprite;
 import echo.Body;
@@ -26,6 +28,10 @@ class PlayState extends FlxState
 	public var uhoh:Int = 1; // Tiled's Global IDs thing makes this more complicated than it should be. See ForestTux PlayState for more info. Although, warning, there is a bit of swearing there.
 
 	public var tux(default, null):Tux;
+
+	// This works. It shouldn't.
+	public var badguys(default, null):FlxTypedGroup<BadguyNoEcho>;
+
 	public var solidThings:FlxGroup;
 	public var entities:FlxGroup;
 
@@ -46,6 +52,7 @@ class PlayState extends FlxState
 		// Add things part 2
 		solidThings = new FlxGroup();
 		entities = new FlxGroup();
+		badguys = new FlxTypedGroup<BadguyNoEcho>();
 		tux = new Tux();
 		hud = new HUD();
 
@@ -57,6 +64,7 @@ class PlayState extends FlxState
 		// Add things part 3
 		add(solidThings);
 		add(entities);
+		add(badguys);
 		add(tux);
 		add(hud);
 
@@ -99,6 +107,9 @@ class PlayState extends FlxState
 
 			collideEntities(entity);
 		}});
+
+		// Entity collision
+		FlxEcho.listen(solidThings, entities);
 	}
 
 	// AnatolyStev
@@ -108,11 +119,28 @@ class PlayState extends FlxState
 		{
 			cast(entity, Coin).collect();
 		}
+
+		if (Std.isOfType(entity, Badguy))
+		{
+			cast(entity, Badguy).interact(tux);
+		}
+	}
+
+	function collideEntitiesNoEcho(entity:FlxSprite, tux:Tux)
+	{
+		if (Std.isOfType(entity, BadguyNoEcho))
+		{
+			(cast entity).interact(tux);
+		}
 	}
 
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
+
+		// Badguy collision
+		FlxG.overlap(badguys, tux, collideEntitiesNoEcho);
+		FlxG.collide(solidThings, badguys);
 
 		updateCheckpoint();
 	}

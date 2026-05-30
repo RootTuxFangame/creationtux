@@ -21,7 +21,7 @@ enum TuxStates
 class Tux extends FlxSprite
 {
     // Movement
-    var tuxAcceleration:Int = 2925; // not exactly a random number, but kind of is
+    var tuxAcceleration:Int = 1000; // not exactly a random number, but kind of is
     var deceleration:Int = 800;
     public var minJumpHeight:Int = 512;
     public var maxJumpHeight:Int = 576;
@@ -72,7 +72,7 @@ class Tux extends FlxSprite
         setSize(31, 31);
         offset.set(0, 5.5);
 
-        this.add_body({x: this.x, y: this.y, max_velocity_x: speed, drag_x: deceleration, mass: 5.0, shape: {type: RECT, width: 31, height: 31}, material: {elasticity: 0.0}});
+        this.add_body({x: this.x, y: this.y, max_velocity_x: speed, drag_x: deceleration, mass: 1.0, shape: {type: RECT, width: 31, height: 31}, material: {elasticity: 0.0}});
 
         reloadGraphics();
     }
@@ -81,8 +81,8 @@ class Tux extends FlxSprite
     {
         var body = FlxEcho.get_body(this);
 
-        x = body.x - width * 0.5; // is this needed?
-        y = body.y - height * 0.5; // is this needed?
+        // x = body.x - width * 0.5; // is this needed?
+        // y = body.y - height * 0.5; // is this needed?
 
         velocity.x = body.velocity.x;
         velocity.y = body.velocity.y;

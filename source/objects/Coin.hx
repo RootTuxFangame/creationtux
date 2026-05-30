@@ -34,7 +34,7 @@ class Coin extends FlxSprite
         this.get_body().active = false;
         Global.coins += 1;
         FlxG.sound.play("assets/sounds/coin.wav");
-        FlxTween.tween(this, {alpha: 0, y: y -64}, 0.25, {onComplete: finishKill});
+        FlxTween.tween(this, {alpha: 0, y: y -64}, 0.33, {onComplete: finishKill});
     }
 
     function finishKill(_)

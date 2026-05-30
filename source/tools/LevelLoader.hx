@@ -1,5 +1,7 @@
 package tools;
 
+import creatures.badguy.SnowballNoEcho;
+import creatures.badguy.Snowball;
 import objects.Coin;
 import flixel.FlxState;
 import flixel.addons.display.FlxBackdrop;
@@ -99,6 +101,16 @@ class LevelLoader extends FlxState
                 case "coin":
                     var coin:Coin = new Coin(object.x, object.y - 32);
                     coin.add_to_group(state.entities);
+            }
+        }
+
+        for (object in getLevelObjects(tiledMap, "Badguys"))
+        {
+            switch (object.type)
+            {
+                default:
+                    var snowball:SnowballNoEcho = new SnowballNoEcho(object.x, object.y - 32);
+                    state.badguys.add(snowball);
             }
         }
     }
