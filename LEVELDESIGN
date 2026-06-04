@@ -1,29 +1,23 @@
 - Level design for RootTux -
 
 Created on: May 2, 2026
-Last update: May 2, 2026
+Last update: June 4, 2026
 
 This document describes how to make good levels for RootTux
 To be clear, not all levels need to be the best thing ever
-made. You just need to make them good. The lowest quality
-levels that would be accepted would be something like
-Pre-0.7.1? Countercurrent.
+made. You just need to make them good.
 
 This is based on the SuperTux Milestone 2 Level Design
 Guidelines document, which is why there's very similar 
 wording.
 
 The person who created the original levelguidelines.txt
-from SuperTux is Wansti.
+from SuperTux is Wansti, I think.
 
 Introduction
 ------------
 These guidelines should be followed for any level that
-appears in the official worlds. Level Designers contributing
-levels to the planned 6th world or to their own mod can
-choose whether they follow these level guidelines or not.
-However, to maintain a certain level of playability, 
-official levels should be designed with these rules in mind.
+appears in the official worlds.
 
 Rules
 -----
@@ -35,8 +29,7 @@ Rules
    what is foreground and background. Avoid placing bonus
    blocks and items in the background.
 3. Be careful not to create dead ends. The player should not
-   be able to be softlocked in any level, even in the 6th
-   world!
+   be able to be softlocked in any level.
 4. Test your level thoroughly to find possible paths you
    might have missed before that can be used to cheat.
 5. Use everything the engine offers, but don't place it all
@@ -53,7 +46,7 @@ Rules
    "good" value. In longer levels, make sure there are enough
    checkpoints, so players won't have to repeat large portions
    of the level.
-9. Secret areas sghould be well-hidden and not visible on
+9. Secret areas should be well-hidden and not visible on
    first sight. Use your imagination to think of new ways to
    create secrets, like making a more difficult path that leads
    to a Tux Doll, for example. You should avoid using invisible
