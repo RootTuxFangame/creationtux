@@ -1,12 +1,22 @@
-This file is an introduction to RootTux.
+This file is an introduction to CreationTux.
 
-# RootTux
-## Story
-Tux swims to Icy Island, but on the way, he gets a note that his friend, Penny, was kidnapped by "King Nolok"! 
-
-Tux didn't know who this Nolok guy was, but he was mad at him for kidnapping Penny! Now, Tux needed to find 
-Nolok, which wouldn't be easy...
-
+# CreationTux
 ## Information
-RootTux is a free and open source SuperTux fangame that has the same (almost) goal as ReTux, which is to be 
-like what our / RootTux Team's vision of what a SuperTux Milestone 2 could've been.
+CreationTux is a free and open source SuperTux fangame that aims to recreate
+SuperTux Milestone 1 using HaxeFlixel and Echo-Flixel, which are some free and 
+open source libraries for game development using Haxe, which is a free and open
+source coding language. Lots of free and open source. Because free and open
+source.
+
+Here, "free" means you can do anything you want and that there is no cost. Do
+whatever you like. You can even contribute to this fangame! Although there are
+some limits to that because you can't just put whatever you want in it since
+this is a recreation. New contributions are welcome but new features not seen in
+SuperTux Milestone 1 have to be discussed.
+
+This is more of a recreation of the 0.1.3 version of SuperTux, so there'll likely 
+be no 0.1.4 stuff in this fangame.
+
+Don't get this confused with SuperTux Classic. That fangame is more like a remake
+instead of just a recreation, although it's still a good SuperTux fangame that you
+should play.
