@@ -1,4 +1,4 @@
-- Level design for RootTux -
+# Level Design for RootTux
 
 Created on: May 2, 2026
 Last update: June 7, 2026
@@ -14,13 +14,11 @@ wording.
 The person who created the original levelguidelines.txt
 from SuperTux is Wansti, I think.
 
-Introduction
-------------
+## Introduction
 These guidelines should be followed for any level that
 appears in the official worlds.
 
-Rules
------
+## Rules
 1. Don't mix tilesets! There shouldn't be any ice tiles in a
    forest level, unless there is an obvious reason (like
    a transition into another area)
