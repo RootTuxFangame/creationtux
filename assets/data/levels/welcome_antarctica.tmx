@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="310" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="153">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="310" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="173">
  <properties>
   <property name="Level Creator" value="Marek Moeckel"/>
   <property name="Level Name" value="Welcome To Antarctica"/>
@@ -116,27 +116,29 @@
   <object id="40" type="coin" gid="454" x="2208" y="288" width="32" height="32"/>
   <object id="44" type="coin" gid="454" x="3072" y="352" width="32" height="32"/>
   <object id="53" type="coin" gid="454" x="3264" y="256" width="32" height="32"/>
+  <object id="153" type="bonus" gid="455" x="384" y="352" width="32" height="32"/>
+  <object id="154" type="bonus" gid="455" x="448" y="352" width="32" height="32"/>
+  <object id="155" type="bonus" gid="455" x="512" y="352" width="32" height="32"/>
+  <object id="156" type="bonus" gid="455" x="576" y="352" width="32" height="32"/>
+  <object id="157" gid="455" x="1184" y="352" width="32" height="32"/>
+  <object id="158" gid="455" x="1248" y="352" width="32" height="32"/>
+  <object id="159" gid="455" x="1312" y="352" width="32" height="32"/>
+  <object id="160" type="bonus" gid="455" x="3584" y="224" width="32" height="32"/>
+  <object id="161" type="bonus" gid="455" x="3648" y="224" width="32" height="32"/>
+  <object id="162" type="bonus" gid="455" x="3616" y="224" width="32" height="32"/>
+  <object id="163" type="bonus" gid="455" x="3712" y="224" width="32" height="32"/>
+  <object id="164" type="bonus" gid="455" x="3744" y="224" width="32" height="32"/>
+  <object id="165" type="bonus" gid="455" x="4640" y="352" width="32" height="32"/>
+  <object id="166" type="bonus" gid="455" x="4672" y="352" width="32" height="32"/>
+  <object id="167" type="bonus" gid="455" x="4704" y="352" width="32" height="32"/>
+  <object id="168" type="bonus" gid="455" x="4736" y="352" width="32" height="32"/>
+  <object id="169" type="bonus" gid="455" x="4768" y="352" width="32" height="32"/>
+  <object id="170" type="bonus" gid="455" x="4736" y="224" width="32" height="32"/>
+  <object id="171" type="bonus" gid="455" x="4704" y="224" width="32" height="32"/>
+  <object id="172" type="bonus" gid="455" x="4672" y="224" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="10" name="Badguys">
   <object id="114" gid="442" x="1120" y="448" width="32" height="32"/>
-  <object id="135" gid="442" x="544" y="448" width="32" height="32"/>
-  <object id="136" gid="442" x="544" y="416" width="32" height="32"/>
-  <object id="137" gid="442" x="544" y="384" width="32" height="32"/>
-  <object id="138" gid="442" x="544" y="352" width="32" height="32"/>
-  <object id="139" gid="442" x="576" y="448" width="32" height="32"/>
-  <object id="140" gid="442" x="576" y="416" width="32" height="32"/>
-  <object id="141" gid="442" x="576" y="384" width="32" height="32"/>
-  <object id="142" gid="442" x="608" y="416" width="32" height="32"/>
-  <object id="143" gid="442" x="608" y="448" width="32" height="32"/>
-  <object id="144" gid="442" x="640" y="448" width="32" height="32"/>
-  <object id="145" gid="442" x="512" y="448" width="32" height="32"/>
-  <object id="146" gid="442" x="512" y="416" width="32" height="32"/>
-  <object id="147" gid="442" x="512" y="384" width="32" height="32"/>
-  <object id="148" gid="442" x="480" y="416" width="32" height="32"/>
-  <object id="149" gid="442" x="480" y="448" width="32" height="32"/>
-  <object id="150" gid="442" x="448" y="448" width="32" height="32"/>
-  <object id="151" gid="442" x="736" y="448" width="32" height="32"/>
-  <object id="152" gid="442" x="352" y="448" width="32" height="32"/>
   <object id="117" gid="442" x="1728" y="448" width="32" height="32"/>
   <object id="118" gid="442" x="2000" y="448" width="32" height="32"/>
   <object id="119" gid="442" x="3004" y="448" width="32" height="32"/>

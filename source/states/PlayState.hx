@@ -2,13 +2,12 @@ package states;
 
 // anatolystev - adds the coin
 
+import objects.BonusBlock;
 import creatures.badguy.BadguyNoEcho;
 import creatures.badguy.Badguy;
 import objects.Coin;
 import flixel.FlxSprite;
 import echo.Body;
-import echo.data.Options.WorldOptions;
-import echo.World;
 import creatures.player.Tux;
 import flixel.FlxG;
 import flixel.FlxState;
@@ -27,11 +26,16 @@ class PlayState extends FlxState
 	public var map:FlxTilemap;
 	public var uhoh:Int = 1; // Tiled's Global IDs thing makes this more complicated than it should be. See ForestTux PlayState for more info. Although, warning, there is a bit of swearing there.
 
+	// Specific things
 	public var tux(default, null):Tux;
 
-	// This works. It shouldn't.
+	// Flixel-only stuff
+	// Yes, this works. It shouldn't. 
+	// And it won't work with slopes if anyone adds those, that's why there's a Badguy.hx but be warned, that makes the game slow down!
 	public var badguys(default, null):FlxTypedGroup<BadguyNoEcho>;
 
+	// Echo stuff
+	public var blockHitAreas:FlxGroup;
 	public var solidThings:FlxGroup;
 	public var entities:FlxGroup;
 
@@ -52,6 +56,7 @@ class PlayState extends FlxState
 		// Add things part 2
 		solidThings = new FlxGroup();
 		entities = new FlxGroup();
+		blockHitAreas = new FlxGroup();
 		badguys = new FlxTypedGroup<BadguyNoEcho>();
 		tux = new Tux();
 		hud = new HUD();
@@ -64,6 +69,7 @@ class PlayState extends FlxState
 		// Add things part 3
 		add(solidThings);
 		add(entities);
+		add(blockHitAreas);
 		add(badguys);
 		add(tux);
 		add(hud);
@@ -108,6 +114,15 @@ class PlayState extends FlxState
 			collideEntities(entity);
 		}});
 
+		FlxEcho.listen(blockHitAreas, tux, {separate: false, enter: (bodyA:Body, bodyB:Body, _) -> { // AnatolyStev (since this is a copy and pasted version of the code above, just for blockhitareas)
+			var spriteA:FlxSprite = cast bodyA.object;
+			var spriteB:FlxSprite = cast bodyB.object;
+
+			var blockHitAreaThing = (spriteA == tux) ? spriteB : spriteA;
+
+			collideBlocks(blockHitAreaThing);
+		}});
+
 		// Entity collision
 		FlxEcho.listen(solidThings, entities);
 	}
@@ -120,9 +135,33 @@ class PlayState extends FlxState
 			cast(entity, Coin).collect();
 		}
 
+		// deprecated???
 		if (Std.isOfType(entity, Badguy))
 		{
 			cast(entity, Badguy).interact(tux);
+		}
+	}
+
+	function collideBlocks(hitArea:FlxSprite) 
+	{
+		// anatolystev
+
+		// check the members in the solidthings
+		for (member in solidThings.members)
+		{
+			// oh! bonus block!
+			if (Std.isOfType(member, BonusBlock))
+			{
+				// cast the member
+				var block:BonusBlock = cast member;
+
+				// use echoarea2dthing :-)
+				if (block.echoArea2DThing == hitArea)
+				{
+					// the bonus block shall be broken by tux's mighty head! :-)
+					block.hit(tux);
+				}
+			}
 		}
 	}
 

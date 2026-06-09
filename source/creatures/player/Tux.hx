@@ -93,7 +93,7 @@ class Tux extends FlxSprite
             body.x = 0;
         }
 
-        if (body.y > Global.PS.map.height - height)
+        if (body.y > Global.PS.map.height + this.height)
         {
             die();
         }
